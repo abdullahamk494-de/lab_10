@@ -1,136 +1,120 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Student Information Page</title>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
 
-    <!-- CSS Connection -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+.container {
+    width: 85%;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
 
-</head>
+header {
+    text-align: center;
+    background-color: #17365d;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
 
-<body>
+header h1 {
+    margin: 5px;
+}
 
-<div class="container">
+header h2 {
+    color: white;
+    border: none;
+    margin: 5px;
+}
 
-    <header>
-        <h1>FAST-NUCES Peshawar</h1>
-        <h2>Department of Computer Science</h2>
-        <h2>Student Information Page</h2>
-    </header>
+p {
+    line-height: 1.7;
+    font-size: 16px;
+}
 
-    <p>
-        Welcome to the student information page. This page shows basic HTML
-        elements such as headings, paragraphs, unordered lists, and tables.
-    </p>
+h2 {
+    color: #17365d;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 7px;
+    margin-top: 25px;
+}
 
-    <h2>About Me</h2>
-    <p>
-        My name is Ali Khan. I am a student of BS Computer Science.
-        I like programming, reading books, and playing cricket.
-    </p>
+ul {
+    background-color: #eaf2f8;
+    padding: 15px 35px;
+    border-radius: 8px;
+}
 
-    <h2>My Hobbies</h2>
-    <ul>
-        <li>Programming</li>
-        <li>Reading Books</li>
-        <li>Playing Cricket</li>
-        <li>Traveling</li>
-    </ul>
+li {
+    padding: 5px;
+}
 
-    <h2>Subjects I Am Studying</h2>
-    <ul>
-        <li>Data Structures</li>
-        <li>Artificial Intelligence</li>
-        <li>Database Systems</li>
-        <li>Web Engineering
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
-        </li>
-    </ul>
+li:hover {
+    color: #0077b6;
+}
 
-    <h2>Semester Result</h2>
-    <p>The table below shows the marks of the current semester.</p>
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
 
-    <table>
-        <tr>
-            <th colspan="4">Semester Result - Fall 2026</th>
-        </tr>
-        <tr>
-            <th>Subject</th>
-            <th>Mid Term</th>
-            <th>Final Term</th>
-            <th>Total</th>
-        </tr>
-        <tr>
-            <td>Data Structures</td>
-            <td>25</td>
-            <td>45</td>
-            <td>70</td>
-        </tr>
-        <tr>
-            <td>Artificial Intelligence</td>
-            <td>28</td>
-            <td>50</td>
-            <td>78</td>
-        </tr>
-        <tr>
-            <td>Database Systems</td>
-            <td>22</td>
-            <td>40</td>
-            <td>62</td>
-        </tr>
-        <tr>
-            <th colspan="3">Grand Total</th>
-            <th>210</th>
-        </tr>
-        <tr>
-            <th colspan="2">Result</th>
-            <td colspan="2">Pass</td>
-        </tr>
-    </table>
+th {
+    background-color: #17365d;
+    color: white;
+    padding: 12px;
+    border: 1px solid #ccc;
+}
 
-    <h2>Weekly Timetable</h2>
+td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
 
-    <table>
-        <tr>
-            <th>Day</th>
-            <th>8:00 - 9:30</th>
-            <th>9:30 - 11:00</th>
-            <th>11:00 - 12:30</th>
-        </tr>
-        <tr>
-            <td>Monday</td>
-            <td>Data Structures</td>
-            <td colspan="2">AI Lab</td>
-        </tr>
-        <tr>
-            <td>Tuesday</td>
-            <td>Database Systems</td>
-            <td>Web Engineering</td>
-            <td>Free</td>
-        </tr>
-        <tr>
-            <td>Wednesday</td>
-            <td colspan="3">Holiday</td>
-        </tr>
-    </table>
+tr:nth-child(even) {
+    background-color: #eaf2f8;
+}
 
-    <h2>Contact</h2>
+tr:hover {
+    background-color: #d6eaf8;
+}
 
-    <div class="contact">
-        <p>
-            For any query, contact the department office during working hours.
-        </p>
-    </div>
+.contact {
+    background-color: #eaf2f8;
+    padding: 15px;
+    border-left: 5px solid #3498db;
+    border-radius: 5px;
+}
 
-    <footer>
-        © 2026 Student Information Page
-    </footer>
+footer {
+    text-align: center;
+    background-color: #17365d;
+    color: white;
+    padding: 12px;
+    margin-top: 25px;
+    border-radius: 8px;
+}
 
-</div>
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 12px;
+        box-sizing: border-box;
+    }
 
-</body>
-</html>
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 7px;
+    }
+}
